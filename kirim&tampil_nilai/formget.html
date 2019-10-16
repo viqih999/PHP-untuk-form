@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+ 
+<meta http-equiv="Content-Type" content="text/html; 
+charset=UTF-8" /> <!--Menentukan pengkodean karakter untuk dokumen-->
+ 
+<title>Belajar Form PHP</title>
+</head>
+<body>
+ 
+<h2>Tutorial Belajar Form HTML - PHP </h2>
+ <!-- Pada tag form terdapat 2 atribut yaitu :
+ 1. action : file yang dituju ketika tombol submit ditekan.
+ 2. method : jenis method yang digunakan untuk mengirimkan data pada form. 
+    Ada 2 yaitu post dan get, post digunakan untuk mengirimkan data yg bersifat rahasia seperti username,password dll
+    dan data yang dikirim tidak akan tampil pada alamat URL, sedangkan get akan ditampilkan di alamat URL--> 
+<form action="prosesget.php" method="get">
+ 
+Nama: <input type="text" name="nama" /> <!-- masukan tipe text yang nanti diisikan nama--->
+ 
+<br />
+ 
+E-Mail: <input type="text" name="email" /> <!-- masukan tipe text yang nanti diisikan email--->
+ 
+<br />
+ 
+<input type="submit" value="Proses Data" > <!--tombol submit yang apabila di klik akan mengirimkan
+    data dari form ke halaman prosesget.php untuk diproses. Atribut penting disini adalah atribut type=”submit”, 
+    yang akan otomatis mengirim isian form ketika tombol ini di klik. -->
+ 
+</form>
+</body>
+</html>
